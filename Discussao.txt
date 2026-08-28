@@ -1,0 +1,14 @@
+1. Por que praticamente todo site hoje usa HTTPS?  
+  Pois a maioria dos sites presam pela qualidade e segurança de seus clientes, conservando a 
+  integridade de suas informações contra invasores.
+
+2. O que aconteceria se navegadores não interpretassem HTML?  
+  Os sites não teriam estruturas, veríamos o código puro no lugar do site.
+
+3. Qual a maior mudança da Web 1.0 para a Web 2.0?  
+  A época da web.1 o usuário era apenas um espectador, sem a capacidade de expressar-se. 
+  Diferente da web.2 onde o usuário é capaz de interagir com o sistema
+
+4. Como a IA pode mudar o desenvolvimento web no futuro?  
+  Com a implantação da IA no desenvolvimentos web, o processo é automático e ágil, aumentando 
+  exponencialmente a velocidade de produção de sites, e futuramente podendo substituir os programadores.
