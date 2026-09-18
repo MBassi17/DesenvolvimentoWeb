@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio - Miguel Bassi </title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <h1>Miguel da Silva Bassi</h1>
+    <img src="img/perfil.png" alt="Foto de perfil de Miguel - em frente ao computador" width="150">
+    <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+    <p><strong>Cidade/UF:</strong> São Paulo/SP</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contato">Contato</a>
+    <a href="#conhecimentos">Conhecimentos</a>
+    <a href="#curiosidade">Curiosidade</a>
+</nav>
+
+<main>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Eu sou o Miguel, tenho 18 anos, moro em São Paulo, estou atualmente trabalhando na Revise Seu Plano, 
+        uma empresa que atua no setor de seguro saúde, estou estudando análise e desenvolvimento de sistemas
+        na FATEC Carapicuíba, gosto de jogar basquete, videogame. Sou escoteiro a 12 anos, conquistei as 
+        insígnias máximas em todos os ramos que passei, amo acampar e viajar.</p>
+
+        <p>O que me motivou a inicar na área de tecnologia foi o meu irmão, que atua na área de design com UI/UX.
+        Comecei a me interessar e decidi cursar na ETEC, após isso eu criei um amor pelo desenvolvimento e decidi
+        me aprofundar mais na área, então estou cursando na FATEC. Atualmente estou aprendendo a desenvolver 
+        aplicações web.</p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Meus Hobbies</h2>
+        <ul type="square">
+            <li>Jogar Video Games</li>
+            <li>Praticar esportes</li>
+            <li>Acampar</li>
+            <li>Estudar</li>
+            <li>Ler livros</li>
+        </ul>
+        <h3>Galeria dos meus hobbies</h3>
+        <img src="img/hobbie1.jpg" alt="Jogar Video Games" width="150">
+        <img src="img/hobbie2.jpg" alt="Praticar esportes" width="150">
+        <img src="img/hobbie3.jpg" alt="Acampar" width="150">
+    </section>
+
+    <section id="contato">
+        <nav>
+            <h2>Contato</h2>
+            <ul>
+                <li><a href="https://github.com/MBassi17" target="_blank">Meu GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/miguel-da-silva-bassi/" target="_blank">Meu LinkedIn</a></li>
+                <li><a href="mailto:migueldsbassi@gmail.com">Meu e-mail</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <aside>
+        <h3>Curiosidade sobre mim</h3>
+        <p>Gosto muito de escrever, principalmente poesias.
+            Tenho muita vontade de viajar para o leste asiático.</p>
+    </aside>
+
+    <section id="conhecimentos">
+    <h2>Meus Conhecimentos</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Tecnologia</th>
+            <th>Nível</th>
+            <th>Experiência (meses)</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Iniciante</td>
+            <td>6 meses</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Iniciante</td>
+            <td>6 meses</td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>Intermediário</td>
+            <td>15 meses</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Iniciante</td>
+            <td>2 meses</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Iniciante</td>
+            <td>4 meses</td>
+        </tr>
+    </table>
+    </section>
+    <section id="contato-form">
+    <h2>Entre em contato</h2>
+    <form>
+        <label for="nomeContato">Nome:</label>
+        <input type="text" id="nomeContato" required>
+        <br><br>
+
+        <label for="emailContato">E-mail:</label>
+        <input type="email" id="emailContato" required placeholder="seu.email@exemplo.com">
+        <br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" required placeholder="(11) 99999-9999">
+        <br><br>
+
+        <label for="data">Prefere contato em que data?</label>
+        <input type="date" id="data">
+        <br><br>
+
+        <label for="assuntoSelect">Assunto:</label>
+        <select id="assuntoSelect">
+            <option>Dúvida sobre curso</option>
+            <option>Sugestão</option>
+            <option>Orçamento</option>
+        </select>
+        <br><br>
+
+        <label for="mensagemContato">Mensagem:</label>
+        <textarea id="mensagemContato" placeholder="Digite sua mensagem aqui..."></textarea>
+        <br><br>
+
+        <button type="submit">Enviar mensagem</button>
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Miguel da Silva Bassi. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
