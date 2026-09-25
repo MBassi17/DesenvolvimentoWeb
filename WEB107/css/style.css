@@ -1,1 +1,49 @@
+h1 {
+    color: #004ba8ff;
+    text-align: center;
+}
 
+h2 {
+    color: #2d848aff;
+}
+
+h3 {
+    color: #170a1cff;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+#título-principal {
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+}
+#curiosidade {
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;           
+    text-align: center;
+}
+
+body {
+    background-color: #cfe8efff;
+    color: #170a1cff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+/* --midnight-violet: #170a1cff;
+--cobalt-blue: #004ba8ff;
+--teal: #2d848aff;
+--pale-sky: #cfe8efff;
+--white: #ffffffff; */
