@@ -1,8 +1,8 @@
 /* ===== Paleta ===== */
 :root {
-  --principal: #2c3e50; /* cor pedida, mantida como base */
+  --principal: #2c3e50;
   --principal-clara: #3e5871;
-  --acento: #d4a94e; /* dourado sóbrio, para detalhes e hover */
+  --acento: #d4a94e; 
   --fundo: #f4f6f8;
   --fundo-card: #ffffff;
   --texto: #333333;
@@ -23,7 +23,6 @@ html {
   scroll-padding-top: 4.5rem;
 }
 
-/* ===== Passo 5 – Espaçamento geral ===== */
 body {
   margin: 0;
   padding: 20px;
@@ -57,7 +56,6 @@ a {
   border-radius: 4px;
 }
 
-/* ===== Cabeçalho ===== */
 .cabecalho {
   background-color: var(--principal);
   color: #ffffff;
@@ -99,7 +97,6 @@ a {
   color: var(--acento);
 }
 
-/* ===== Menu fixo ===== */
 .menu-nav {
   position: sticky;
   top: 0;
@@ -131,7 +128,6 @@ a {
   color: #ffffff;
 }
 
-/* ===== Card ===== */
 .card {
   background-color: var(--fundo-card);
   border: 1px solid var(--borda);
@@ -147,13 +143,11 @@ a {
   border-bottom: 2px solid var(--acento);
 }
 
-/* ===== Destaque ===== */
 .destaque {
   font-weight: bold;
   color: var(--principal);
 }
 
-/* ===== Botão ===== */
 .botao {
   background-color: var(--principal);
   color: #ffffff;
@@ -169,7 +163,6 @@ a {
   background-color: var(--principal-clara);
 }
 
-/* ===== Habilidades em pílulas ===== */
 .habilidades-grid {
   display: flex;
   gap: 15px;
@@ -185,7 +178,6 @@ a {
   border: 1px solid var(--borda);
 }
 
-/* ===== Projetos (Flexbox: Passo 4) ===== */
 .projetos-grid {
   display: flex;
   gap: 20px;
@@ -221,7 +213,6 @@ a {
   display: inline-block;
 }
 
-/* ===== Galeria de hobbies ===== */
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -236,7 +227,6 @@ a {
   border: 1px solid var(--borda);
 }
 
-/* ===== Tabela ===== */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -257,7 +247,6 @@ tr:nth-child(even) td {
   background-color: var(--fundo);
 }
 
-/* ===== Formulário ===== */
 .formulario {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -306,7 +295,6 @@ textarea {
   justify-self: start;
 }
 
-/* ===== Rodapé (Flexbox: Desafio extra) ===== */
 .rodape {
   display: flex;
   justify-content: space-between;
@@ -339,7 +327,6 @@ textarea {
   color: var(--acento);
 }
 
-/* ===== Responsivo ===== */
 @media (max-width: 480px) {
   .cabecalho__conteudo {
     flex-direction: column;
