@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SGVE, sistema de gerenciamento de vagas de estacionamento feito por Miguel da Silva Bassi, com sensor em Arduino e dados armazenados no Firebase."
+    />
+    <title>
+      SGVE — Sistema Gerenciador de Vagas de Estacionamento | Miguel Bassi
+    </title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <script>
+      (function () {
+        var tema = localStorage.getItem("tema");
+        if (
+          tema === "dark" ||
+          (!tema && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="pagina-projeto">
+      <header class="projeto-cabecalho">
+        <a href="index.html" class="projeto-voltar">← Voltar ao portfólio</a>
+        <button
+          id="tema-toggle"
+          class="tema-toggle"
+          type="button"
+          aria-label="Ativar modo escuro"
+          aria-pressed="false"
+        >
+          <span aria-hidden="true">🌙</span>
+        </button>
+      </header>
+
+      <main>
+        <article class="card projeto-detalhe">
+          <h1>SGVE — Sistema Gerenciador de Vagas de Estacionamento</h1>
+          <p class="projeto-detalhe__resumo">
+            Sistema de gerenciamento de vagas dentro de um estacionamento, feito
+            em Python, com um sensor feito em Arduino para detectar a ocupação
+            das vagas e os dados armazenados no Google Firebase.
+          </p>
+
+          <div class="habilidades-grid">
+            <span class="habilidade-item">Python</span>
+            <span class="habilidade-item">Arduino</span>
+            <span class="habilidade-item">Firebase</span>
+          </div>
+
+          <div class="projeto-detalhe__links">
+            <a
+              href="https://gerenciadordevagasistema-create.github.io/SGVE-SITE/"
+              target="_blank"
+              class="botao"
+              >Acessar o projeto</a
+            >
+          </div>
+
+          <section>
+            <h2>Sobre o projeto</h2>
+            <p>
+              O SGVE nasceu como um projeto para resolver um problema comum em
+              estacionamentos pequenos e médios: controlar manualmente quais
+              vagas estão disponíveis. Um sensor conectado a um Arduino
+              identifica se cada vaga está livre ou ocupada, e essa informação é
+              enviada e armazenada no Firebase, para ser consultada em tempo
+              real.
+            </p>
+          </section>
+
+          <section>
+            <h2>Principais funcionalidades</h2>
+            <ul>
+              <li>
+                Leitura da ocupação de cada vaga em tempo real, através de
+                sensores no Arduino.
+              </li>
+              <li>
+                Envio automático dos dados do sensor para o Google Firebase.
+              </li>
+              <li>
+                Processamento e consulta das informações das vagas feitos em
+                Python.
+              </li>
+              <li>
+                Visualização de quais vagas estão livres ou ocupadas no momento.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Desafios e aprendizados</h2>
+            <p>
+              O principal desafio foi integrar o Arduino com o Firebase,
+              garantindo que os dados fossem enviados de forma confiável e em
+              tempo real. Além disso, foi necessário aprender a lidar com a
+              comunicação entre hardware e software, bem como otimizar o código
+              Python para processar as informações rapidamente. Aprendi muito
+              sobre a importância de testes em ambientes reais, já que o
+              comportamento do sensor pode variar dependendo das condições do
+              estacionamento.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <footer class="rodape">
+        <p>&copy; 2026 Miguel da Silva Bassi. Todos os direitos reservados.</p>
+        <div class="rodape__links">
+          <a href="https://github.com/MBassi17" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/miguel-da-silva-bassi/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:migueldsbassi@gmail.com">E-mail</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/tema.js"></script>
+  </body>
+</html>

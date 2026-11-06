@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Íris, aplicativo feito por Miguel da Silva Bassi para a segurança de mulheres, com botão do pânico que envia a localização para contatos de confiança."
+    />
+    <title>Íris | Miguel Bassi</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <script>
+      (function () {
+        var tema = localStorage.getItem("tema");
+        if (
+          tema === "dark" ||
+          (!tema && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="pagina-projeto">
+      <header class="projeto-cabecalho">
+        <a href="index.html" class="projeto-voltar">← Voltar ao portfólio</a>
+        <button
+          id="tema-toggle"
+          class="tema-toggle"
+          type="button"
+          aria-label="Ativar modo escuro"
+          aria-pressed="false"
+        >
+          <span aria-hidden="true">🌙</span>
+        </button>
+      </header>
+
+      <main>
+        <article class="card projeto-detalhe">
+          <h1>Íris</h1>
+          <p class="projeto-detalhe__resumo">
+            Projeto feito para garantir a segurança das mulheres, contra a
+            violência doméstica e nas ruas, com um botão do pânico que envia a
+            localização dela para contatos de confiança.
+          </p>
+
+          <div class="habilidades-grid">
+            <span class="habilidade-item">Java</span>
+          </div>
+
+          <div class="projeto-detalhe__links">
+            <a
+              href="https://www.figma.com/design/PCiNyoBtQPJ8TDqLm14V7D/Projeto-Integrador?node-id=0-1&t=cTYBgRb5MneuNhhQ-1"
+              target="_blank"
+              class="botao"
+              >Ver protótipo no Figma</a
+            >
+          </div>
+
+          <section>
+            <h2>Sobre o projeto</h2>
+            <p>
+              O Íris nasceu da necessidade de dar mais segurança a mulheres em
+              situações de risco, seja dentro de casa, em um episódio de
+              violência doméstica, ou em espaços públicos. A ideia central é
+              simples: em um momento de perigo, a vítima não tem tempo nem
+              tranquilidade para pedir ajuda da forma tradicional, então o
+              aplicativo reduz essa ação a um único botão.
+            </p>
+          </section>
+
+          <section>
+            <h2>Principais funcionalidades</h2>
+            <ul>
+              <li>
+                Botão do pânico, acionado rapidamente em uma situação de risco.
+              </li>
+              <li>
+                Envio automático da localização da usuária para os contatos de
+                confiança cadastrados.
+              </li>
+              <li>Cadastro de contatos de confiança que recebem o alerta.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Desafios e aprendizados</h2>
+            <p>
+              O principal desafio foi pensar em como a usuária poderia acionar o
+              botão do pânico de forma rápida e discreta, sem chamar atenção.
+              Além disso, foi necessário estudar como obter a localização do
+              dispositivo de maneira eficiente e segura, garantindo que os
+              contatos de confiança recebessem a informação em tempo real.
+              Planejo implementar futuras atualizações, como integração com
+              serviços de emergência e notificações automáticas para autoridades
+              locais. Aprendi muito sobre a importância de considerar a
+              experiência do usuário em situações de estresse e como a
+              tecnologia pode ser uma aliada na segurança pessoal.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <footer class="rodape">
+        <p>&copy; 2026 Miguel da Silva Bassi. Todos os direitos reservados.</p>
+        <div class="rodape__links">
+          <a href="https://github.com/MBassi17" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/miguel-da-silva-bassi/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:migueldsbassi@gmail.com">E-mail</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/tema.js"></script>
+  </body>
+</html>
